@@ -14,8 +14,27 @@ public class Calculator {
         this.secondNumber = secondNumber;
     }
 
-    public int add(int number1, int number2){
-        int equals = number1 + number2;
-        return equals;
+    public void setFirstNumber(int firstNumber) {
+        this.firstNumber = firstNumber;
     }
+
+    public void setSecondNumber(int secondNumber) {
+        this.secondNumber = secondNumber;
+    }
+
+    public int add(int number1, int number2){
+        int result = number1 + number2;
+        return result;
+    }
+
+    public int getFirstNumber() {
+        return firstNumber;
+    }
+
+    public int getSecondNumber() {
+        return secondNumber;
+    }
+
+    @Override
+    public  String toString() {return "Result" + add(getFirstNumber(), getSecondNumber());}
 }

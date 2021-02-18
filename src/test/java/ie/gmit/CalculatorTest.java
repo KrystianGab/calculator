@@ -18,4 +18,12 @@ public class CalculatorTest {
         assertEquals(1.1, result, 0.09999999999991);
     }
 
+    @Test
+    public void  testMultiply(){
+        Calculator calculator = new Calculator();
+        double result = calculator.multiply(3.33, 10);
+        assertEquals(33.3, result, 0);
+    }
+
+
 }

@@ -11,4 +11,11 @@ public class CalculatorTest {
         assertEquals(5.5, result, 0);
     }
 
+    @Test
+    public void testSubtract(){
+        Calculator calculator = new Calculator();
+        double result = calculator.subtract(3.3, 2.2);
+        assertEquals(1.1, result, 0.09999999999991);
+    }
+
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="ie.gmit.CalculatorTest" time="0.016" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="ie.gmit.CalculatorTest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,15 +64,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="ie.gmit.CalculatorTest" name="ie.gmit.CalculatorTest.testSubtract" time="0.016">
-    <failure message="expected: &lt;1.1&gt; but was: &lt;1.0999999999999996&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;1.1&gt; but was: &lt;1.0999999999999996&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:81)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:993)
-	at ie.gmit.CalculatorTest.testSubtract(CalculatorTest.java:18)
-</failure>
-  </testcase>
-  <testcase classname="ie.gmit.CalculatorTest" name="ie.gmit.CalculatorTest.testAdd" time="0"/>
+  <testcase classname="ie.gmit.CalculatorTest" name="ie.gmit.CalculatorTest.testAdd" time="0.001"/>
+  <testcase classname="ie.gmit.CalculatorTest" name="ie.gmit.CalculatorTest.testSubtract" time="0"/>
 </testsuite>

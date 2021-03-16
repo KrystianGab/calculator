@@ -1,40 +1,52 @@
 package ie.gmit;
 
 public class Calculator {
-    private int firstNumber;
-    private int secondNumber;
+    private double firstNumber;
+    private double secondNumber;
 
     public Calculator(){
-        this.firstNumber = 0;
-        this.secondNumber = 0;
+        this.firstNumber = 0.00;
+        this.secondNumber = 0.00;
     }
 
-    public Calculator(int firstNumber, int secondNumber){
+    public Calculator(double firstNumber, double secondNumber){
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
     }
 
-    public void setFirstNumber(int firstNumber) {
+    public void setFirstNumber(double firstNumber) {
         this.firstNumber = firstNumber;
     }
 
-    public void setSecondNumber(int secondNumber) {
+    public void setSecondNumber(double secondNumber) {
         this.secondNumber = secondNumber;
     }
 
-    public int add(int number1, int number2){
-        int result = number1 + number2;
-        return result;
-    }
-
-    public int getFirstNumber() {
+    public double getFirstNumber() {
         return firstNumber;
     }
 
-    public int getSecondNumber() {
+    public double getSecondNumber() {
         return secondNumber;
     }
 
-    @Override
-    public  String toString() {return "Result" + add(getFirstNumber(), getSecondNumber());}
+    public double add(double number1, double number2){
+        double result = number1 + number2;
+        return result;
+    }
+
+    public double subtract(double number1, double number2) {
+        double result = number1 - number2;
+        return result;
+    }
+
+    public double multiply(double number1, double number2) {
+        double result = number1 * number2;
+        return result;
+    }
+
+    public double divide(double number1, double number2) {
+        double result = number1 / number2;
+        return result;
+    }
 }

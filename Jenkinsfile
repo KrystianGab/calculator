@@ -13,7 +13,7 @@ pipeline{
 		stage("Test") {
 			steps{
 				bat "mvn test"
-				echo 'Testing'
+				echo 'Testing.1.2.3'
 			}
 		}
 	}

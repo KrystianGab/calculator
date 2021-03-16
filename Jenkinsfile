@@ -6,7 +6,7 @@ pipeline{
 			steps {
 			  	bat "mvn -v"
 			  	bat "mvn clean"
-			  	bat "mvn compile"
+			  	bat "mvn compile
 				echo 'Building'
 			}
 		}
